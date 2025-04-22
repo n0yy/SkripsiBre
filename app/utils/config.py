@@ -1,15 +1,17 @@
 import streamlit as st
 
+
 def set_page_config():
     """Configure page settings and styling"""
     st.set_page_config(
-        page_title="Dosan Book Store",
+        page_title="Gramedians",
         page_icon="📚",
         layout="wide",
-        initial_sidebar_state="expanded"
+        initial_sidebar_state="expanded",
     )
-    
-    st.markdown("""
+
+    st.markdown(
+        """
         <style>
         .book-card {
             border: 1px solid #2e2e2e;
@@ -83,4 +85,6 @@ def set_page_config():
             margin-bottom: 20px;
         }
         </style>
-    """, unsafe_allow_html=True)
+    """,
+        unsafe_allow_html=True,
+    )
